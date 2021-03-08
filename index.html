@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      #container {
+        display: flex;
+        flex-flow: row wrap;
+        width: 90%;
+        margin: 10px auto;
+        
+      }
+      .mainframe {
+        display: flex;
+        flex-flow: row wrap;
+        width: 90%;
+        margin: 100px auto;
+      }
+      .content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 50px;
+        margin: 20px auto 50px;
+      }
+      .box {
+        height: 150px;
+        border-radius: 8px;
+        background: url("placeholder-image.png") no-repeat center,
+          linear-gradient(to bottom, cornflowerblue 85%, rgb(243, 238, 238) 15%);
+        background-size: 200px;
+        text-align: center;
+        line-height: 275px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .content {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (max-width: 414px) {
+        .content {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        h4 {
+        text-align: center;
+        width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="mainframe">
+        <h4>Gallery Heading</h4>
+        <div class="content">
+          <div class="box">Image Title</div>
+          <div class="box">Image Title</div>
+          <div class="box">Image Title</div>
+          <div class="box">Image Title</div>
+          <div class="box">Image Title</div>
+          <div class="box">Image Title</div>
+          <div class="box">Image Title</div>
+          <div class="box">Image Title</div>
+          <div class="box">Image Title</div>
+          <div class="box">Image Title</div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum
+          eleifend eros sit amet ultrices. In varius, ante in lobortis molestie,
+          enim dolor congue diam, tempor imperdiet tellus tortor quis nulla.
+          Duis ut dignissim tortor, at interdum odio. Pellentesque habitant
+          morbi tristique senectus et netus et malesuada fames ac turpis
+          egestas. Vestibulum in dui consequat, posuere libero at, posuere
+          ligula. Cras auctor massa non sollicitudin venenatis. Cras quis arcu
+          et nibh feugiat viverra sit amet eget ex. Mauris volutpat odio sit
+          amet neque sollicitudin, et tempus lectus condimentum. Duis vel tellus
+          sed lacus sollicitudin gravida vitae id felis. Nunc vulputate metus
+          eget justo porttitor ornare. Maecenas pellentesque, risus ut tristique
+          ornare, erat eros sagittis nunc, eget tempor eros felis nec leo.
+        </p>
+      </div>
+    </div>
+  </body>
